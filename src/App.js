@@ -1,27 +1,24 @@
-import Laptop from "./component/laptop.js";
-import {sum1_100} from "./component/laptop";
+//import Laptop from "./laptop";
+import ClassComponentEg from "./component/classComponentEg";
+//import ToggleComponent from "./component/ToggleComponent";
+import TodoComponent from "./component/todocomponent";
 
-function App(Props){
+/*const product={
+    pname:"XYZ",
+    plink:"https://www.amazon.in/deal/cca5e12b?smid=A14CZOWI0VEHLG&pf_rd_r=D74BC14B09MJGFHA9PGF&pf_rd_p=f690369a-7bb4-48bb-9349-f68a447ef06d&pd_rd_r=f1ca9aa0-48db-4db1-b5ba-8b28242713fc&pd_rd_w=ecFg7&pd_rd_wg=lr4U7&ref_=pd_gw_unk",
+    imglink:"https://m.media-amazon.com/images/I/61saGX0RILL._SX355_.jpg",
+    price:10000
+}*/
+
+
+function App(){
     return(
-    
-        
-<div>
-<Laptop imagelink="https://m.media-amazon.com/images/I/81pZfQvoYkL._SL1500_.jpg"
- imagename="HP 15 AMD Ryzen 5 5500U 15.6 inch(39.6 cms) FHD Laptop "
-  price="45,000">
-  </Laptop>
-
-  <Laptop imagelink="https://m.media-amazon.com/images/I/71nTZkJByLL._SX450_.jpg"
- imagename="HP 15 AMD Ryzen 3 3250U 15.6 inches FHD Thin and Light Laptop (8GB RAM/256GB"
-  price="50,000">
-  </Laptop>
-  
-  <Laptop imagelink="https://m.media-amazon.com/images/I/81kf96c9T+L._SL1500_.jpg"
- imagename="HP Pavilion 15 11th Gen Intel Core i5-8GB RAM/512GB SSD"
-  price="55,000">
-  </Laptop>
-  <sum1_100></sum1_100>  
-</div>
-    );
+        <div>
+        <ClassComponentEg prop1 = "21.09.2000"></ClassComponentEg>
+       {// <ToggleComponent></ToggleComponent>
+}           <TodoComponent></TodoComponent> 
+            <pendingComponent></pendingComponent>
+        </div>
+    )
 }
 export default App;
