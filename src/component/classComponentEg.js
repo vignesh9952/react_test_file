@@ -25,33 +25,33 @@
 //     }
 // }
 
-import React from "react"
+// import React from "react"
 
-class classComponentEg extends React.Component{
-    constructor(props){
-        super(props)
-            this.state={
-                name : "Vicky",
-                msg : "initial",
-                loading : true
-            }
-    }
-    updateState = () =>{
-        this.setState({name : "frank", msg : "new", loading : false})
-    }
+// class classComponentEg extends React.Component{
+//     constructor(props){
+//         super(props)
+//             this.state={
+//                 name : "Vicky",
+//                 msg : "initial",
+//                 loading : true
+//             }
+//     }
+//     updateState = () =>{
+//         this.setState({name : "frank", msg : "new", loading : false})
+//     }
 
-    render(){
-        return(
-        <div>
-            <h1>component</h1>
-            <h2>{this.props.prop1}</h2>
-            <h2>{this.state.name}</h2>
-            <h3>{this.state.msg}</h3>
-            <button onClick={this.updateState}>update</button>
-        </div>
-        )
-    }
+//     render(){
+//         return(
+//         <div>
+//             <h1>component</h1>
+//             <h2>{this.props.prop1}</h2>
+//             <h2>{this.state.name}</h2>
+//             <h3>{this.state.msg}</h3>
+//             <button onClick={this.updateState}>update</button>
+//         </div>
+//         )
+//     }
 
 
-}  
-export default classComponentEg
+// }  
+// export default classComponentEg
